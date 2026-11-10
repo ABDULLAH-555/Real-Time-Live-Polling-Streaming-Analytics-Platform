@@ -1,19 +1,19 @@
 # 📊 Real-Time Live Poll App
 
-> An end-to-end, event-driven streaming application built with **Apache Kafka**, **Python**, and **Streamlit** to ingest, process, and visualize live audience poll responses in real time[cite: 2].
+> An end-to-end, event-driven streaming application built with **Apache Kafka**, **Python**, and **Streamlit** to ingest, process, and visualize live audience poll responses in real time.
 
 ---
 
 ## 🚀 Overview
 
-This project simulates a live conference audience voting environment[cite: 2]. A decoupled Kafka Producer streams simulated survey responses[cite: 2], while an embedded Kafka Consumer within a Streamlit dashboard aggregates and renders the incoming data dynamically without requiring manual page reloads[cite: 2, 3].
+This project simulates a live conference audience voting environment. A decoupled Kafka Producer streams simulated survey responses while an embedded Kafka Consumer within a Streamlit dashboard aggregates and renders the incoming data dynamically without requiring manual page reloads.
 
 ### ✨ Key Features
-- **⚡ Asynchronous Event Streaming:** High-throughput message queuing powered by Apache Kafka[cite: 2].
+- **⚡ Asynchronous Event Streaming:** High-throughput message queuing powered by Apache Kafka.
 - **📈 Real-Time KPI Tracking:** Instant response counter updating dynamically with every submission using `st.metric()`.
 - **📊 Dynamic Visualizations:** Question-wise bar charts maintaining natural logical order (e.g., ratings 1–5, sentiment scale).
 - **📋 Live Feed Table:** Real-time DataFrame logging every recorded poll with unique submission IDs.
-- **🔄 In-Place Dynamic Rerendering:** State-managed dashboard updates using session caching[cite: 3].
+- **🔄 In-Place Dynamic Rerendering:** State-managed dashboard updates using session caching.
 
 ---
 
@@ -21,11 +21,11 @@ This project simulates a live conference audience voting environment[cite: 2]. A
 
 | Component | Technology | Purpose |
 | :--- | :--- | :--- |
-| **Message Broker** | Apache Kafka | Real-time distributed event streaming[cite: 2] |
+| **Message Broker** | Apache Kafka | Real-time distributed event streaming |
 | **Coordination** | Apache ZooKeeper | Cluster state management for Kafka |
-| **Frontend UI** | Streamlit | Real-time reactive data dashboard[cite: 2] |
+| **Frontend UI** | Streamlit | Real-time reactive data dashboard |
 | **Data Processing** | Python, Pandas | Payload transformation and aggregation |
-| **Plotting Engine** | Plotly / Streamlit Native | Interactive categorical charts[cite: 3] |
+| **Plotting Engine** | Plotly / Streamlit Native | Interactive categorical charts |
 
 ---
 
